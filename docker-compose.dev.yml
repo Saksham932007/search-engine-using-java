@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  # Backend Application (Development)
+  backend:
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    container_name: search-engine-backend-dev
+    environment:
+      SPRING_PROFILES_ACTIVE: default
+      SEARCH_INDEX_DIR: /app/lucene-index
+    volumes:
+      - lucene_index:/app/lucene-index
+      - ./sample-documents:/app/sample-documents:ro
+      - ./backend/src:/app/src:ro
+    ports:
+      - "8080:8080"
+    networks:
+      - search-engine-network
+    restart: unless-stopped
+
+  # Frontend Application (Development)
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend.Dockerfile
+      target: build
+    container_name: search-engine-frontend-dev
+    environment:
+      REACT_APP_API_URL: http://localhost:8080/api
+      NODE_ENV: development
+    volumes:
+      - ./frontend/src:/app/src:ro
+      - ./frontend/public:/app/public:ro
+    ports:
+      - "3000:3000"
+    command: npm start
+    depends_on:
+      - backend
+    networks:
+      - search-engine-network
+    restart: unless-stopped
+
+volumes:
+  lucene_index:
+
+networks:
+  search-engine-network:
+    driver: bridge

@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  database:
+    image: postgres:15-alpine
+    container_name: search-engine-db
+    environment:
+      POSTGRES_DB: searchengine
+      POSTGRES_USER: searchengine
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    networks:
+      - search-engine-network
+
+  # Backend Application
+  backend:
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    container_name: search-engine-backend
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      DB_USERNAME: searchengine
+      DB_PASSWORD: password
+      SEARCH_INDEX_DIR: /app/lucene-index
+    volumes:
+      - lucene_index:/app/lucene-index
+      - ./sample-documents:/app/sample-documents:ro
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+    networks:
+      - search-engine-network
+    restart: unless-stopped
+
+  # Frontend Application
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend.Dockerfile
+    container_name: search-engine-frontend
+    environment:
+      REACT_APP_API_URL: http://localhost:8080/api
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - search-engine-network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  lucene_index:
+
+networks:
+  search-engine-network:
+    driver: bridge
