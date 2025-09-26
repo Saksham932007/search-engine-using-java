@@ -76,7 +76,7 @@ WARNING: sun.misc.Unsafe::invokeCleaner will be removed in a future release
 2025-09-26 17:45:32 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2025-09-26 17:45:32 - 
 
-Using generated security password: 13d92066-f79f-4a97-bbe9-0cccffaa66a5
+Using generated security password: 
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
