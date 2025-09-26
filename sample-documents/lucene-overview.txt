@@ -1,0 +1,50 @@
+Apache Lucene Search Engine Library
+
+Apache Lucene is a free, open-source information retrieval software library, originally written entirely in Java by Doug Cutting. Supported by the Apache Software Foundation, it is suitable for nearly any application that requires full-text indexing and searching capability.
+
+Core Features:
+- Scalable, high-performance indexing
+- Powerful, accurate and efficient search algorithms
+- Cross-platform solution
+- Small RAM requirements (only 1MB heap)
+- Incremental indexing as fast as batch indexing
+- Index size roughly 20-30% the size of text indexed
+
+Architecture Components:
+
+1. Document: A collection of fields containing text or binary data
+2. Field: A named piece of text or binary data within a document
+3. Term: A word from text, the unit of search
+4. Index: A collection of documents
+
+Indexing Process:
+The indexing process involves analyzing documents and creating an inverted index that maps each unique term to a list of documents containing that term.
+
+Search Process:
+1. Parse the query string
+2. Convert query to internal representation
+3. Search the index for matching documents
+4. Score and rank the results
+5. Return the top matching documents
+
+Query Types:
+- TermQuery: Search for documents containing a specific term
+- BooleanQuery: Combine multiple queries with AND, OR, NOT
+- PhraseQuery: Search for exact phrases
+- WildcardQuery: Search using wildcards (* and ?)
+- FuzzyQuery: Find terms similar to a given term
+- RangeQuery: Search within a range of values
+
+Analyzers:
+Analyzers process text during indexing and searching. They break text into tokens and apply filters like:
+- StandardAnalyzer: General purpose analyzer
+- WhitespaceAnalyzer: Splits text on whitespace
+- KeywordAnalyzer: Treats entire input as a single token
+- LanguageAnalyzers: Language-specific analyzers
+
+Performance Tips:
+1. Use appropriate analyzers for your content
+2. Optimize field storage and indexing options
+3. Use proper query types for your use cases
+4. Implement proper caching strategies
+5. Monitor index size and performance metrics

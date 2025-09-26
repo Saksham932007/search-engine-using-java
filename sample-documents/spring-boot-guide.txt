@@ -1,0 +1,44 @@
+Spring Boot Framework Guide
+
+Spring Boot makes it easy to create stand-alone, production-grade Spring-based applications that you can just run. We take an opinionated view of the Spring platform and third-party libraries so you can get started with minimum fuss.
+
+What Spring Boot Offers:
+- Create stand-alone Spring applications
+- Embed Tomcat, Jetty or Undertow directly (no need to deploy WAR files)
+- Provide opinionated 'starter' dependencies to simplify your build configuration
+- Automatically configure Spring and 3rd party libraries whenever possible
+- Provide production-ready features such as metrics, health checks, and externalized configuration
+- Absolutely no code generation and no requirement for XML configuration
+
+Getting Started:
+The easiest way to get started with Spring Boot is to use the Spring Initializr at https://start.spring.io/
+
+Basic Application Structure:
+src/
+ +- main/
+     +- java/
+         +- com/
+             +- example/
+                 +- Application.java
+     +- resources/
+         +- application.properties
+
+Main Application Class:
+@SpringBootApplication
+public class Application {
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+}
+
+Key Annotations:
+- @SpringBootApplication: Combines @Configuration, @EnableAutoConfiguration, and @ComponentScan
+- @RestController: Combines @Controller and @ResponseBody
+- @RequestMapping: Maps HTTP requests to handler methods
+- @Autowired: Enables dependency injection
+
+Auto-Configuration:
+Spring Boot's auto-configuration attempts to automatically configure your Spring application based on the jar dependencies that you have added. For example, if HSQLDB is on your classpath, and you have not manually configured any database connection beans, then Spring Boot auto-configures an in-memory database.
+
+Externalized Configuration:
+Spring Boot lets you externalize your configuration so that you can work with the same application code in different environments. You can use properties files, YAML files, environment variables, and command-line arguments to externalize configuration.

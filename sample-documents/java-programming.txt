@@ -1,0 +1,29 @@
+Java Programming Fundamentals
+
+Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let application developers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need to recompile.
+
+Key Features of Java:
+- Platform Independent: Java code can run on multiple platforms
+- Object-Oriented: Everything in Java is an object
+- Secure: Java provides a secure platform for developing applications
+- Robust: Java has strong memory management and error handling
+- Multithreaded: Java supports multithreaded programming
+
+Java Virtual Machine (JVM):
+The Java Virtual Machine is a runtime environment that executes Java bytecode. It provides a platform-independent way of executing code by abstracting the underlying operating system.
+
+Basic Syntax:
+Java syntax is similar to C++ but simplified. Every Java program must have at least one class, and the main method serves as the entry point for the application.
+
+Example:
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+
+Object-Oriented Concepts:
+1. Encapsulation: Bundling data and methods together
+2. Inheritance: Creating new classes based on existing classes
+3. Polymorphism: Using one interface for different data types
+4. Abstraction: Hiding implementation details from users
