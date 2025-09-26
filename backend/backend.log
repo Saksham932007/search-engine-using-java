@@ -1,0 +1,342 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/home/linuxbrew/.linuxbrew/Cellar/maven/3.9.11/libexec/lib/guice-5.1.0-classes.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.searchengine:java-search-engine >-----------------
+[INFO] Building Java Search Engine 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.0:run (default-cli) > test-compile @ java-search-engine >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ java-search-engine ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ java-search-engine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ java-search-engine ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ java-search-engine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot:3.2.0:run (default-cli) < test-compile @ java-search-engine <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.0:run (default-cli) @ java-search-engine ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-09-26 17:45:25 - Starting SearchEngineApplication using Java 25 with PID 9183 (/home/sakshamkapoor/Projects/search engine/backend/target/classes started by sakshamkapoor in /home/sakshamkapoor/Projects/search engine/backend)
+2025-09-26 17:45:25 - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 17:45:25 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-26 17:45:25 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-26 17:45:27 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 17:45:27 - Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/home/sakshamkapoor/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2025-09-26 17:45:28 - Tomcat initialized with port 8080 (http)
+2025-09-26 17:45:28 - Starting service [Tomcat]
+2025-09-26 17:45:28 - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-09-26 17:45:28 - Initializing Spring embedded WebApplicationContext
+2025-09-26 17:45:28 - Root WebApplicationContext: initialization completed in 2469 ms
+2025-09-26 17:45:28 - HikariPool-1 - Starting...
+2025-09-26 17:45:28 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:searchengine user=SA
+2025-09-26 17:45:28 - HikariPool-1 - Start completed.
+2025-09-26 17:45:28 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:searchengine'
+2025-09-26 17:45:28 - Filter 'webMvcObservationFilter' configured for use
+2025-09-26 17:45:28 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 17:45:29 - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-09-26 17:45:29 - HHH000026: Second-level cache disabled
+2025-09-26 17:45:29 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 17:45:29 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-26 17:45:29 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 17:45:30 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 17:45:31 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-26 17:45:31 - You are running with Java 22 or later. To make full use of MMapDirectory, please update Apache Lucene.
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::invokeCleaner has been called by org.apache.lucene.store.MappedByteBufferIndexInputProvider (file:/home/sakshamkapoor/.m2/repository/org/apache/lucene/lucene-core/9.8.0/lucene-core-9.8.0.jar)
+WARNING: Please consider reporting this to the maintainers of class org.apache.lucene.store.MappedByteBufferIndexInputProvider
+WARNING: sun.misc.Unsafe::invokeCleaner will be removed in a future release
+2025-09-26 17:45:31 - Lucene search service initialized with index directory: ./lucene-index
+2025-09-26 17:45:32 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 17:45:32 - 
+
+Using generated security password: 13d92066-f79f-4a97-bbe9-0cccffaa66a5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-26 17:45:32 - 16 mappings in 'requestMappingHandlerMapping'
+2025-09-26 17:45:32 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-26 17:45:32 - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-09-26 17:45:32 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@38ee96f8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6abf1dd5, org.springframework.security.web.context.SecurityContextHolderFilter@647b2f37, org.springframework.security.web.header.HeaderWriterFilter@65974e40, org.springframework.web.filter.CorsFilter@5375c1a5, org.springframework.security.web.authentication.logout.LogoutFilter@4ca9d945, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a4b20fe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@759e1fc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21a5b46c, org.springframework.security.web.access.ExceptionTranslationFilter@6e78021c, org.springframework.security.web.access.intercept.AuthorizationFilter@5cdf9cd9]
+2025-09-26 17:45:32 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-09-26 17:45:33 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-09-26 17:45:33 - LiveReload server is running on port 35729
+2025-09-26 17:45:33 - Tomcat started on port 8080 (http) with context path ''
+2025-09-26 17:45:33 - Started SearchEngineApplication in 8.07 seconds (process running for 8.624)
+2025-09-26 17:48:54 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 17:48:54 - Initializing Servlet 'dispatcherServlet'
+2025-09-26 17:48:54 - Detected StandardServletMultipartResolver
+2025-09-26 17:48:54 - Detected AcceptHeaderLocaleResolver
+2025-09-26 17:48:54 - Detected FixedThemeResolver
+2025-09-26 17:48:54 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@287c77b1
+2025-09-26 17:48:54 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@43d59177
+2025-09-26 17:48:54 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-09-26 17:48:54 - Completed initialization in 2 ms
+2025-09-26 17:48:54 - Cache miss for REQUEST dispatch to '/actuator/health' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-09-26 17:48:54 - GET "/actuator/health", parameters={}
+2025-09-26 17:48:54 - Read "application/octet-stream" to []
+2025-09-26 17:48:54 - Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2025-09-26 17:48:54 - Writing [org.springframework.boot.actuate.health.SystemHealth@4003fefb]
+2025-09-26 17:48:54 - Completed 200 OK
+2025-09-26 17:49:38 - GET "/api/search/history", parameters={}
+2025-09-26 17:49:38 - Mapped to com.searchengine.controller.SearchController#getSearchHistory()
+2025-09-26 17:49:38 - GET "/api/search/history", parameters={}
+2025-09-26 17:49:38 - Mapped to com.searchengine.controller.SearchController#getSearchHistory()
+2025-09-26 17:49:39 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:49:39 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:49:39 - Writing [[]]
+2025-09-26 17:49:39 - Writing [[]]
+2025-09-26 17:49:39 - Completed 200 OK
+2025-09-26 17:49:39 - Completed 200 OK
+2025-09-26 17:49:45 - GET "/api/search?q=sdf&page=0&size=10", parameters={masked}
+2025-09-26 17:49:45 - Mapped to com.searchengine.controller.SearchController#search(String, int, int)
+2025-09-26 17:49:45 - Search request - Query: 'sdf', Page: 0, Size: 10
+2025-09-26 17:49:45 - Search completed for query 'sdf': 0 results in 178ms
+2025-09-26 17:49:45 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:49:45 - Writing [com.searchengine.dto.SearchResponseDto@387201bf]
+2025-09-26 17:49:45 - Completed 200 OK
+2025-09-26 17:49:46 - GET "/api/search/stats/average-time?days=7", parameters={masked}
+2025-09-26 17:49:46 - Mapped to com.searchengine.controller.SearchController#getAverageSearchTime(int)
+2025-09-26 17:49:46 - GET "/api/search/history", parameters={}
+2025-09-26 17:49:46 - GET "/api/documents/stats", parameters={}
+2025-09-26 17:49:46 - GET "/api/search/stats/average-time?days=7", parameters={masked}
+2025-09-26 17:49:46 - GET "/api/search/popular?days=7", parameters={masked}
+2025-09-26 17:49:46 - Mapped to com.searchengine.controller.SearchController#getPopularQueries(int)
+2025-09-26 17:49:46 - Mapped to com.searchengine.controller.SearchController#getAverageSearchTime(int)
+2025-09-26 17:49:46 - Mapped to com.searchengine.controller.DocumentController#getDocumentStats()
+2025-09-26 17:49:46 - GET "/api/search/popular?days=7", parameters={masked}
+2025-09-26 17:49:46 - Mapped to com.searchengine.controller.SearchController#getPopularQueries(int)
+2025-09-26 17:49:46 - Mapped to com.searchengine.controller.SearchController#getSearchHistory()
+2025-09-26 17:49:46 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:49:46 - Writing [[com.searchengine.model.SearchHistory@14ea16f1]]
+2025-09-26 17:49:46 - Completed 200 OK
+2025-09-26 17:49:46 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:49:46 - Writing [[[Ljava.lang.Object;@74d8b69b]]
+2025-09-26 17:49:46 - GET "/api/documents/stats", parameters={}
+2025-09-26 17:49:46 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:49:46 - Writing [[[Ljava.lang.Object;@1357c3c8]]
+2025-09-26 17:49:46 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:49:46 - Writing [{indexedCount=0, statsByContentType=[]}]
+2025-09-26 17:49:46 - Mapped to com.searchengine.controller.DocumentController#getDocumentStats()
+2025-09-26 17:49:46 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:49:46 - Writing [178.0]
+2025-09-26 17:49:46 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:49:46 - Completed 200 OK
+2025-09-26 17:49:46 - Writing [{indexedCount=0, statsByContentType=[]}]
+2025-09-26 17:49:46 - Completed 200 OK
+2025-09-26 17:49:46 - Completed 200 OK
+2025-09-26 17:49:46 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:49:46 - Writing [178.0]
+2025-09-26 17:49:46 - Completed 200 OK
+2025-09-26 17:49:46 - Completed 200 OK
+2025-09-26 17:49:46 - Completed 200 OK
+2025-09-26 17:49:51 - GET "/api/search?q=java&page=0&size=10", parameters={masked}
+2025-09-26 17:49:51 - Mapped to com.searchengine.controller.SearchController#search(String, int, int)
+2025-09-26 17:49:51 - Search request - Query: 'java', Page: 0, Size: 10
+2025-09-26 17:49:51 - Search completed for query 'java': 0 results in 2ms
+2025-09-26 17:49:51 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:49:51 - Writing [com.searchengine.dto.SearchResponseDto@56263d5a]
+2025-09-26 17:49:51 - Completed 200 OK
+2025-09-26 17:49:51 - GET "/api/search/history", parameters={}
+2025-09-26 17:49:51 - Mapped to com.searchengine.controller.SearchController#getSearchHistory()
+2025-09-26 17:49:51 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:49:51 - Writing [[com.searchengine.model.SearchHistory@4e63878, com.searchengine.model.SearchHistory@40b1afea]]
+2025-09-26 17:49:51 - Completed 200 OK
+2025-09-26 17:49:57 - POST "/api/search", parameters={}
+2025-09-26 17:49:57 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-09-26 17:49:57 - Completed 405 METHOD_NOT_ALLOWED
+2025-09-26 17:50:00 - GET "/api/search?q=java&page=0&size=10", parameters={masked}
+2025-09-26 17:50:00 - Mapped to com.searchengine.controller.SearchController#search(String, int, int)
+2025-09-26 17:50:00 - Search request - Query: 'java', Page: 0, Size: 10
+2025-09-26 17:50:00 - Search completed for query 'java': 0 results in 1ms
+2025-09-26 17:50:00 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:50:00 - Writing [com.searchengine.dto.SearchResponseDto@6d936207]
+2025-09-26 17:50:00 - Completed 200 OK
+2025-09-26 17:50:00 - GET "/api/search/history", parameters={}
+2025-09-26 17:50:00 - Mapped to com.searchengine.controller.SearchController#getSearchHistory()
+2025-09-26 17:50:00 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:50:00 - Writing [[com.searchengine.model.SearchHistory@5b1f8530, com.searchengine.model.SearchHistory@478bb571, com.s (truncated)...]
+2025-09-26 17:50:00 - Completed 200 OK
+2025-09-26 17:50:02 - GET "/api/search?q=java&page=0&size=10", parameters={masked}
+2025-09-26 17:50:02 - Mapped to com.searchengine.controller.SearchController#search(String, int, int)
+2025-09-26 17:50:02 - Search request - Query: 'java', Page: 0, Size: 10
+2025-09-26 17:50:02 - Search completed for query 'java': 0 results in 1ms
+2025-09-26 17:50:02 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:50:02 - Writing [com.searchengine.dto.SearchResponseDto@7d27087c]
+2025-09-26 17:50:02 - Completed 200 OK
+2025-09-26 17:50:02 - GET "/api/search/history", parameters={}
+2025-09-26 17:50:02 - Mapped to com.searchengine.controller.SearchController#getSearchHistory()
+2025-09-26 17:50:02 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:50:02 - Writing [[com.searchengine.model.SearchHistory@3d272f40, com.searchengine.model.SearchHistory@1ecf512a, com.s (truncated)...]
+2025-09-26 17:50:02 - Completed 200 OK
+2025-09-26 17:50:03 - GET "/api/search?q=java&page=0&size=10", parameters={masked}
+2025-09-26 17:50:03 - Mapped to com.searchengine.controller.SearchController#search(String, int, int)
+2025-09-26 17:50:03 - Search request - Query: 'java', Page: 0, Size: 10
+2025-09-26 17:50:03 - Search completed for query 'java': 0 results in 1ms
+2025-09-26 17:50:03 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:50:03 - Writing [com.searchengine.dto.SearchResponseDto@1fb47eb2]
+2025-09-26 17:50:03 - Completed 200 OK
+2025-09-26 17:50:03 - GET "/api/search/history", parameters={}
+2025-09-26 17:50:03 - Mapped to com.searchengine.controller.SearchController#getSearchHistory()
+2025-09-26 17:50:03 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:50:03 - Writing [[com.searchengine.model.SearchHistory@3db0026b, com.searchengine.model.SearchHistory@20b272a7, com.s (truncated)...]
+2025-09-26 17:50:03 - Completed 200 OK
+2025-09-26 17:50:07 - POST "/api/search", parameters={}
+2025-09-26 17:50:07 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-09-26 17:50:07 - Completed 405 METHOD_NOT_ALLOWED
+2025-09-26 17:50:30 - GET "/api/documents/", parameters={}
+2025-09-26 17:50:30 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-09-26 17:50:30 - Resource not found
+2025-09-26 17:50:30 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/documents.]
+2025-09-26 17:50:30 - Completed 404 NOT_FOUND
+2025-09-26 17:50:36 - GET "/api/search?q=java&page=0&size=10", parameters={masked}
+2025-09-26 17:50:36 - Mapped to com.searchengine.controller.SearchController#search(String, int, int)
+2025-09-26 17:50:36 - Search request - Query: 'java', Page: 0, Size: 10
+2025-09-26 17:50:36 - Search completed for query 'java': 0 results in 0ms
+2025-09-26 17:50:36 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:50:36 - Writing [com.searchengine.dto.SearchResponseDto@11b28efb]
+2025-09-26 17:50:36 - Completed 200 OK
+2025-09-26 17:50:36 - GET "/api/search/history", parameters={}
+2025-09-26 17:50:36 - Mapped to com.searchengine.controller.SearchController#getSearchHistory()
+2025-09-26 17:50:36 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:50:36 - Writing [[com.searchengine.model.SearchHistory@102fcc18, com.searchengine.model.SearchHistory@6d988a4b, com.s (truncated)...]
+2025-09-26 17:50:36 - Completed 200 OK
+2025-09-26 17:50:58 - GET "/api/search?q=java&page=0&size=10", parameters={masked}
+2025-09-26 17:50:58 - Mapped to com.searchengine.controller.SearchController#search(String, int, int)
+2025-09-26 17:50:58 - Search request - Query: 'java', Page: 0, Size: 10
+2025-09-26 17:50:58 - Search completed for query 'java': 0 results in 1ms
+2025-09-26 17:50:58 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:50:58 - Writing [com.searchengine.dto.SearchResponseDto@543cd1ca]
+2025-09-26 17:50:58 - Completed 200 OK
+2025-09-26 17:50:58 - GET "/api/search/history", parameters={}
+2025-09-26 17:50:58 - Mapped to com.searchengine.controller.SearchController#getSearchHistory()
+2025-09-26 17:50:58 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:50:58 - Writing [[com.searchengine.model.SearchHistory@1e88c857, com.searchengine.model.SearchHistory@5b3af7e7, com.s (truncated)...]
+2025-09-26 17:50:58 - Completed 200 OK
+2025-09-26 17:50:59 - GET "/api/search?q=java&page=0&size=10", parameters={masked}
+2025-09-26 17:50:59 - Mapped to com.searchengine.controller.SearchController#search(String, int, int)
+2025-09-26 17:50:59 - Search request - Query: 'java', Page: 0, Size: 10
+2025-09-26 17:50:59 - Search completed for query 'java': 0 results in 2ms
+2025-09-26 17:50:59 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:50:59 - Writing [com.searchengine.dto.SearchResponseDto@22970987]
+2025-09-26 17:50:59 - Completed 200 OK
+2025-09-26 17:50:59 - GET "/api/search/history", parameters={}
+2025-09-26 17:50:59 - Mapped to com.searchengine.controller.SearchController#getSearchHistory()
+2025-09-26 17:50:59 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:50:59 - Writing [[com.searchengine.model.SearchHistory@32c71b47, com.searchengine.model.SearchHistory@2ad2579b, com.s (truncated)...]
+2025-09-26 17:50:59 - Completed 200 OK
+2025-09-26 17:51:00 - GET "/api/search?q=java&page=0&size=10", parameters={masked}
+2025-09-26 17:51:00 - Mapped to com.searchengine.controller.SearchController#search(String, int, int)
+2025-09-26 17:51:00 - Search request - Query: 'java', Page: 0, Size: 10
+2025-09-26 17:51:00 - Search completed for query 'java': 0 results in 1ms
+2025-09-26 17:51:00 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:51:00 - Writing [com.searchengine.dto.SearchResponseDto@7318c57e]
+2025-09-26 17:51:00 - Completed 200 OK
+2025-09-26 17:51:00 - GET "/api/search/history", parameters={}
+2025-09-26 17:51:00 - Mapped to com.searchengine.controller.SearchController#getSearchHistory()
+2025-09-26 17:51:00 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:51:00 - Writing [[com.searchengine.model.SearchHistory@2ae421d1, com.searchengine.model.SearchHistory@3adf26c, com.se (truncated)...]
+2025-09-26 17:51:00 - Completed 200 OK
+2025-09-26 17:51:00 - GET "/api/search?q=java&page=0&size=10", parameters={masked}
+2025-09-26 17:51:00 - Mapped to com.searchengine.controller.SearchController#search(String, int, int)
+2025-09-26 17:51:00 - Search request - Query: 'java', Page: 0, Size: 10
+2025-09-26 17:51:00 - Search completed for query 'java': 0 results in 0ms
+2025-09-26 17:51:00 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:51:00 - Writing [com.searchengine.dto.SearchResponseDto@32ed1fc4]
+2025-09-26 17:51:00 - Completed 200 OK
+2025-09-26 17:51:00 - GET "/api/search/history", parameters={}
+2025-09-26 17:51:00 - Mapped to com.searchengine.controller.SearchController#getSearchHistory()
+2025-09-26 17:51:00 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:51:00 - Writing [[com.searchengine.model.SearchHistory@4ee40fd8, com.searchengine.model.SearchHistory@fa0b6af, com.se (truncated)...]
+2025-09-26 17:51:00 - Completed 200 OK
+2025-09-26 17:51:03 - GET "/api/documents", parameters={}
+2025-09-26 17:51:03 - Mapped to com.searchengine.controller.DocumentController#getAllDocuments()
+2025-09-26 17:51:03 - GET "/api/documents/stats", parameters={}
+2025-09-26 17:51:03 - Mapped to com.searchengine.controller.DocumentController#getDocumentStats()
+2025-09-26 17:51:03 - GET "/api/search/history", parameters={}
+2025-09-26 17:51:03 - Mapped to com.searchengine.controller.SearchController#getSearchHistory()
+2025-09-26 17:51:03 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:51:03 - Writing [{indexedCount=0, statsByContentType=[]}]
+2025-09-26 17:51:03 - Completed 200 OK
+2025-09-26 17:51:03 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:51:03 - Writing [[]]
+2025-09-26 17:51:03 - Completed 200 OK
+2025-09-26 17:51:03 - GET "/api/search/stats/average-time?days=30", parameters={masked}
+2025-09-26 17:51:03 - Mapped to com.searchengine.controller.SearchController#getAverageSearchTime(int)
+2025-09-26 17:51:03 - GET "/api/search/stats/average-time?days=30", parameters={masked}
+2025-09-26 17:51:03 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:51:03 - Writing [[com.searchengine.model.SearchHistory@133e46c5, com.searchengine.model.SearchHistory@5674c9a6, com.s (truncated)...]
+2025-09-26 17:51:03 - GET "/api/search/popular?days=30", parameters={masked}
+2025-09-26 17:51:03 - Mapped to com.searchengine.controller.SearchController#getAverageSearchTime(int)
+2025-09-26 17:51:03 - Mapped to com.searchengine.controller.SearchController#getPopularQueries(int)
+2025-09-26 17:51:03 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:51:03 - Writing [[[Ljava.lang.Object;@3f5af761, [Ljava.lang.Object;@7b6d4071]]
+2025-09-26 17:51:03 - Completed 200 OK
+2025-09-26 17:51:03 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:51:03 - GET "/api/search/popular?days=30", parameters={masked}
+2025-09-26 17:51:03 - Writing [18.7]
+2025-09-26 17:51:03 - Mapped to com.searchengine.controller.SearchController#getPopularQueries(int)
+2025-09-26 17:51:03 - Completed 200 OK
+2025-09-26 17:51:03 - GET "/api/search/history", parameters={}
+2025-09-26 17:51:03 - Mapped to com.searchengine.controller.SearchController#getSearchHistory()
+2025-09-26 17:51:03 - GET "/api/documents/stats", parameters={}
+2025-09-26 17:51:03 - Mapped to com.searchengine.controller.DocumentController#getDocumentStats()
+2025-09-26 17:51:03 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:51:03 - Writing [[[Ljava.lang.Object;@303e58a6, [Ljava.lang.Object;@7477f90c]]
+2025-09-26 17:51:03 - GET "/api/documents/stats", parameters={}
+2025-09-26 17:51:03 - Completed 200 OK
+2025-09-26 17:51:03 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:51:03 - Completed 200 OK
+2025-09-26 17:51:03 - Writing [18.7]
+2025-09-26 17:51:03 - Completed 200 OK
+2025-09-26 17:51:03 - Mapped to com.searchengine.controller.DocumentController#getDocumentStats()
+2025-09-26 17:51:04 - GET "/api/documents", parameters={}
+2025-09-26 17:51:04 - Mapped to com.searchengine.controller.DocumentController#getAllDocuments()
+2025-09-26 17:51:04 - GET "/api/documents/stats", parameters={}
+2025-09-26 17:51:04 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:51:04 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:51:04 - Writing [[]]
+2025-09-26 17:51:04 - Completed 200 OK
+2025-09-26 17:51:04 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:51:04 - Writing [[com.searchengine.model.SearchHistory@3f97eeb5, com.searchengine.model.SearchHistory@971d115, com.se (truncated)...]
+2025-09-26 17:51:04 - Mapped to com.searchengine.controller.DocumentController#getDocumentStats()
+2025-09-26 17:51:04 - Completed 200 OK
+2025-09-26 17:51:04 - Writing [{indexedCount=0, statsByContentType=[]}]
+2025-09-26 17:51:04 - Completed 200 OK
+2025-09-26 17:51:04 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:51:04 - Writing [{indexedCount=0, statsByContentType=[]}]
+2025-09-26 17:51:04 - Completed 200 OK
+2025-09-26 17:51:04 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-09-26 17:51:04 - Writing [{indexedCount=0, statsByContentType=[]}]
+2025-09-26 17:51:04 - Completed 200 OK
+2025-09-26 17:51:48 - Lucene search service cleaned up
+2025-09-26 17:51:48 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 17:51:48 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2025-09-26 17:51:48 - HikariPool-1 - Shutdown initiated...
+2025-09-26 17:51:48 - HikariPool-1 - Shutdown completed.

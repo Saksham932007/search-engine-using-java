@@ -1,0 +1,4 @@
+com/searchengine/service/SearchServiceTest.class
+com/searchengine/service/DocumentIndexingServiceTest.class
+com/searchengine/SearchEngineApplicationTests.class
+com/searchengine/controller/DocumentControllerTest.class

@@ -1,0 +1,14 @@
+com/searchengine/repository/DocumentRepository.class
+com/searchengine/dto/SearchResponseDto.class
+com/searchengine/controller/DocumentController.class
+com/searchengine/config/SecurityConfig.class
+com/searchengine/model/Document.class
+com/searchengine/service/LuceneSearchService.class
+com/searchengine/service/DocumentIndexingService.class
+com/searchengine/service/SearchService.class
+com/searchengine/dto/SearchResultDto.class
+com/searchengine/model/SearchHistory.class
+com/searchengine/SearchEngineApplication.class
+com/searchengine/config/AsyncConfig.class
+com/searchengine/controller/SearchController.class
+com/searchengine/repository/SearchHistoryRepository.class
